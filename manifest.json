@@ -9,7 +9,7 @@
     "128": "icon128.png" 
   },
   "action": {
-    "default_pop": "potato.html",
+    "default_popup": "potato.html",
     "default_icon": "potato_extensions.png"
   },
   "commands": {
@@ -20,5 +20,9 @@
       },
       "description": "Create potato"
     }
-  }
+  },
+  "background": {
+	"service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting", "tabs", "contextMenus"]
 }
